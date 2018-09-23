@@ -123,8 +123,8 @@ int main()
 		ball.pause = game.pause;
 		bar.pause = game.pause;
 		if (!game.pause) game.start = false;
-
-		////// Keyboard and Mouse ///////
+		
+		//////// Keyboard and Mouse ///////
         if (Keyboard::isKeyPressed(Keyboard::Right))
         {
 			bar.move(R, dt);
@@ -137,7 +137,7 @@ int main()
 		mousePosX = Mouse::getPosition(app).x;
 		if (mousePosX >= bar.getWidth()/2 and mousePosX <= width - bar.getWidth()/2 and !bar.pause)
 			bar.setPos(mousePosX);
-		/////////////////////////////
+		////////////////////////////////
 
         ball.move(dt, bar);
 		score += ball.collision(bar, grid, app, game);
