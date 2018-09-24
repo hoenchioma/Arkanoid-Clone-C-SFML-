@@ -1,4 +1,4 @@
-# Arkanoid-Clone-C-SFML-
+# Arkanoid Clone (C++/SFML)
 My try on making a simplified version of the famous Arkanoid/ DX ball game
 
 Language: C++<br>
