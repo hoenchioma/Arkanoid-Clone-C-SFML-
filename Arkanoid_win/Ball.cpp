@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "Ball.h"
+#include "Game_Control.h"
 
 using namespace sf;
 

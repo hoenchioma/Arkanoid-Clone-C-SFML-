@@ -168,6 +168,7 @@
     <ClCompile Include="Ball.cpp" />
     <ClCompile Include="Bar.cpp" />
     <ClCompile Include="Blocks.cpp" />
+    <ClCompile Include="Game_Control.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

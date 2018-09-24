@@ -23,6 +23,7 @@ class Bar
 		Vector2f bottomLeft();
 		double getHeight() { return body.getSize().y; }
 		double getWidth() { return body.getSize().x; }
+		void speedup(double by) { vel += by; }
         ~Bar();
 
         bool isMoving;

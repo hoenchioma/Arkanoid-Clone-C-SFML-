@@ -124,7 +124,7 @@ int main()
 		bar.pause = game.pause;
 		if (!game.pause) game.start = false;
 		
-		//////// Keyboard and Mouse ///////
+		///////////// Keyboard //////////
         if (Keyboard::isKeyPressed(Keyboard::Right))
         {
 			bar.move(R, dt);
@@ -133,7 +133,9 @@ int main()
         {
             bar.move(L, dt);
         }
+		////////////////////////////////
 
+		/////////// Mouse //////////////
 		mousePosX = Mouse::getPosition(app).x;
 		if (mousePosX >= bar.getWidth()/2 and mousePosX <= width - bar.getWidth()/2 and !bar.pause)
 			bar.setPos(mousePosX);

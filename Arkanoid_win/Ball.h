@@ -5,9 +5,10 @@
 #include "Direction.h"
 #include "Bar.h"
 #include "Blocks.h"
-#include "Game_Control.h"
 
 using namespace sf;
+
+class Game_Control; //forward declaration to resolve circular dependency
 
 class Ball
 {
@@ -22,6 +23,7 @@ class Ball
         inline double DY() {return dy;}
 		inline Vector2f centrePos();
         void drawTo(RenderWindow& app) {app.draw(body);}
+		void speedup(double by) { dx += by, dy += by; }
         ~Ball();
 
         friend class Bar;
